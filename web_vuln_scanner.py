@@ -4,9 +4,9 @@ Web Vulnerability Scanner
 Scans websites for common security vulnerabilities and generates a detailed report.
 
 Usage:
-    python web_vuln_scanner.py -u https://example.com
-    python web_vuln_scanner.py -u https://example.com -o report.html --depth 2
-    python web_vuln_scanner.py --help
+    python vulnwatch.py -u https://example.com
+    python vulnwatch.py -u https://example.com -o report.html --depth 2
+    python vulnwatch.py --help
 
 Checks performed:
     - Missing/weak HTTP security headers
