@@ -40,7 +40,7 @@ pip install requests beautifulsoup4
 ## Usage
 
 ```bash
-python3 web_vuln_scanner.py -u https://example.com
+python3 vulnwatch.py -u https://example.com
 ```
 
 ### Options
@@ -63,31 +63,31 @@ python3 web_vuln_scanner.py -u https://example.com
 Basic scan:
 
 ```bash
-python3 web_vuln_scanner.py -u https://example.com
+python3 vulnwatch.py -u https://example.com
 ```
 
 Deeper crawl with an HTML report:
 
 ```bash
-python3 web_vuln_scanner.py -u https://example.com --depth 2 -o report.html
+python3 vulnwatch.py -u https://example.com --depth 2 -o report.html
 ```
 
 Save JSON output and skip SSL verification (useful for staging targets):
 
 ```bash
-python3 web_vuln_scanner.py -u https://example.com --json results.json --no-ssl-verify
+python3 vulnwatch.py -u https://example.com --json results.json --no-ssl-verify
 ```
 
 Slow down requests and extend the timeout for a sensitive target:
 
 ```bash
-python3 web_vuln_scanner.py -u https://example.com --delay 1.0 --timeout 15
+python3 vulnwatch.py -u https://example.com --delay 1.0 --timeout 15
 ```
 
 Route traffic through a proxy (e.g. Burp Suite) to inspect requests:
 
 ```bash
-python3 web_vuln_scanner.py -u https://example.com --proxy http://127.0.0.1:8080
+python3 vulnwatch.py -u https://example.com --proxy http://127.0.0.1:8080
 ```
 
 ---
